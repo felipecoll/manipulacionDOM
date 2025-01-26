@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulacion del DOM</title>
+    <style>
+        .menu {
+          background-color: blue;
+          font-size: 16px;
+        }
+    
+        .main-menu {
+          color: green
+        }
+    
+        .visible {
+          display: block;
+        }
+    
+        .invisible {
+          display: none;
+        }
+      </style>
 </head>
 <body>
-        <script src="index.js"></script>
-</body>
+    <header>
+      <h1 id="app-title">Soy el header de esta app</h1>
+      <menu>
+        <p>Algo de texto ejemplo</p>
+        <ul id="parent">
+          <li><a href="#">Home</a></li>
+          <li class="menu-items"><a href="#">About me</a></li>
+          <li class="menu-items"><a href="#">Blogs</a></li>
+          <li class="menu-items"><a href="#">Contact</a></li>
+        </ul>
+        <section></section>
+      </menu>
+    </header>
+    <main>
+      <section>
+        <p>Soy el texto principal de esta <span>app</span></p>
+      </section>
+      <section>
+        <p>Soy el texto principal de esta <span>app</span></p>
+      </section>
+      <section>
+        <p>Soy el texto secundario de esta app</p>
+        <p>Soy el texto secundario de esta app</p>
+      </section>
+
+      <input id="input-id" type="text" 
+      class="input-class" value="nombre">
+    </main>
+    <script src="modificacionesVarias.js"></script>
+  </body>
 </html>
