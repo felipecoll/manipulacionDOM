@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulacion del DOM</title>
-    <style>
+    <!-- <style>
         .menu {
           background-color: blue;
           font-size: 16px;
@@ -21,7 +21,7 @@
         .invisible {
           display: none;
         }
-      </style>
+      </style> -->
 </head>
 <!-- <body>
     <header>
@@ -54,13 +54,16 @@
   </body> -->
   <body>
     <main>
-      <h2>Eventos!</h2>
-      <div class="container">
-        <p>Este es un texto que se oculta y aparece gracias a un evento de JS</p>
-      </div>
-  
-      <button id="btn">Click me!</button>
-    </main>
-    <script src="modificacionesVarias.js"></script>
+        <form id="myForm">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Correo:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+    <script src="forms.js"></script>
   </body>
 </html>
