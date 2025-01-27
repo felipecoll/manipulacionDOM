@@ -52,8 +52,38 @@
     </main>
     <script src="modificacionesVarias.js"></script>
   </body> -->
+  <style>
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      padding: 1rem;
+      border: 1px solid black;
+      margin: 1rem;
+      cursor: pointer;
+    }
+
+    li:hover {
+      background-color: #ccc;
+    }
+
+    .highlight {
+      background-color: #81fa07;
+      color: white;
+    }
+  </style>
   <body>
-    <main>
+    <!-- <main>
         <form id="myForm">
           <label for="name">Nombre:</label>
           <input type="text" id="name" name="name" required>
@@ -63,7 +93,16 @@
     
           <button type="submit">Submit</button>
         </form>
+      </main> -->
+      <main>
+        <ul>
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+          <li>Option 4</li>
+          <li>Option 5</li>
+        </ul>
       </main>
-    <script src="forms.js"></script>
+    <script src="delegacionEventos.js"></script>
   </body>
 </html>
